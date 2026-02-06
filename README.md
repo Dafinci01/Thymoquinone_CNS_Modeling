@@ -1,44 +1,40 @@
-Got it. You want **clean, GitHub-ready README.md formatting**, not prose.
-Here it is — **tight, structured, reviewer-friendly Markdown**. Paste as-is.
-
----
-
-```markdown
 # Thymoquinone_CNS_Modeling
 
-Computational neuropharmacology pipeline integrating **multi-target CNS docking**, **control-ligand benchmarking**, and **neural/behavioral interpretation** aligned with NeuroData training goals.
+Computational neuropharmacology pipeline integrating **multi-target CNS docking**, **control-ligand benchmarking**, and **neural / behavioral interpretation** aligned with NeuroData-style research training.
 
 ---
 
 ## Project Rationale
-Natural compounds are frequently labeled “neuroprotective” without mechanistic specificity.  
-This project evaluates **thymoquinone** against established CNS drug targets and maps molecular effects to **EEG signatures** and **reinforcement learning (RL) parameters**.
+
+Natural compounds are often described as *neuroprotective* without mechanistic grounding.  
+This project evaluates **thymoquinone** against established CNS drug targets and maps molecular-level interactions to **EEG signatures** and **reinforcement learning (RL) parameters**.
 
 ---
 
-## CNS Targets & Controls
+## CNS Targets and Controls
 
 ### Target Receptors
-- Dopamine D2 receptor (reward learning, motivation)
-- MAO-B (dopamine metabolism, neurodegeneration)
-- NMDA receptor (plasticity, cortical oscillations)
+- **Dopamine D2 receptor (DRD2)** — reward learning, motivation
+- **MAO-B** — dopamine metabolism, neurodegeneration
+- **NMDA receptor** — synaptic plasticity, cortical oscillations
 
 ### Control Ligands
 - **Haloperidol** — D2 antagonist  
 - **Selegiline** — MAO-B inhibitor  
 - **Memantine** — NMDA antagonist  
 
-Controls provide pharmacological grounding and prevent over-interpretation of docking scores.
+Control ligands provide pharmacological baselines and prevent over-interpretation of docking scores.
 
 ---
 
 ## Methods Overview
 
 ### Molecular Docking
-- Engine: **AutoDock Vina**
-- Identical grid parameters per receptor
+- Docking engine: **AutoDock Vina**
+- Identical grid definitions per receptor
 - Best binding pose extracted per ligand
-- Results logged and exported to CSV
+- Docking logs parsed programmatically
+- Results exported to CSV for analysis
 
 ### Comparative Analysis
 - Thymoquinone vs control ligands
@@ -48,18 +44,20 @@ Controls provide pharmacological grounding and prevent over-interpretation of do
 
 ---
 
-## Neural & Behavioral Mapping
+## Neural and Behavioral Mapping
 
 ### Receptor → EEG Hypotheses
+
 | Receptor | Expected EEG Effect |
 |--------|--------------------|
-| D2 | Beta-band modulation (13–30 Hz) |
+| DRD2 | Beta-band modulation (13–30 Hz) |
 | MAO-B | Theta–beta coupling |
 | NMDA | Gamma-band power (30–80 Hz) |
 
 ### EEG → Reinforcement Learning Parameters
+
 | Neural Effect | RL Parameter |
-|-------------|--------------|
+|--------------|-------------|
 | Dopamine tone | Learning rate (α) |
 | D2 signaling | Reward sensitivity |
 | NMDA plasticity | Value update stability |
@@ -68,48 +66,3 @@ Controls provide pharmacological grounding and prevent over-interpretation of do
 ---
 
 ## Repository Structure
-
-```
-
-Thymoquinone_CNS_Modeling/
-├── README.md
-├── ligands/        # Thymoquinone + control ligands (PDBQT)
-├── receptors/      # CNS receptor structures
-├── configs/        # AutoDock Vina configuration files
-├── scripts/        # Docking, parsing, statistics, modeling
-└── results/        # Logs, CSVs, statistical outputs
-
-```
-
----
-
-## Reproducibility
-- Fixed docking parameters
-- Control ligands for benchmarking
-- Analysis-ready outputs
-- Modular and extensible design
-
----
-
-## Status
-Active development  
-Planned extensions:
-- Automated multi-ligand docking
-- Expanded statistical testing
-- EEG/RL simulation modules
-
----
-
-## NeuroData Relevance
-Demonstrates integration of:
-- Molecular modeling
-- Neural signal interpretation
-- Computational behavior modeling
-- Data-driven neuroscience reasoning
-```
-
----
-
-
-
-Say which.
