@@ -1,3 +1,9 @@
+Got it. You want **clean, GitHub-ready README.md formatting**, not prose.
+Here it is — **tight, structured, reviewer-friendly Markdown**. Paste as-is.
+
+---
+
+```markdown
 # Thymoquinone_CNS_Modeling
 
 Computational neuropharmacology pipeline integrating **multi-target CNS docking**, **control-ligand benchmarking**, and **neural/behavioral interpretation** aligned with NeuroData training goals.
@@ -62,3 +68,48 @@ Controls provide pharmacological grounding and prevent over-interpretation of do
 ---
 
 ## Repository Structure
+
+```
+
+Thymoquinone_CNS_Modeling/
+├── README.md
+├── ligands/        # Thymoquinone + control ligands (PDBQT)
+├── receptors/      # CNS receptor structures
+├── configs/        # AutoDock Vina configuration files
+├── scripts/        # Docking, parsing, statistics, modeling
+└── results/        # Logs, CSVs, statistical outputs
+
+```
+
+---
+
+## Reproducibility
+- Fixed docking parameters
+- Control ligands for benchmarking
+- Analysis-ready outputs
+- Modular and extensible design
+
+---
+
+## Status
+Active development  
+Planned extensions:
+- Automated multi-ligand docking
+- Expanded statistical testing
+- EEG/RL simulation modules
+
+---
+
+## NeuroData Relevance
+Demonstrates integration of:
+- Molecular modeling
+- Neural signal interpretation
+- Computational behavior modeling
+- Data-driven neuroscience reasoning
+```
+
+---
+
+
+
+Say which.
