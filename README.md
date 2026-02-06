@@ -66,3 +66,38 @@ Control ligands provide pharmacological baselines and prevent over-interpretatio
 ---
 
 ## Repository Structure
+Thymoquinone_CNS_Modeling/
+├── README.md
+├── ligands/ # Thymoquinone + control ligands (PDBQT)
+├── receptors/ # CNS receptor structures
+├── configs/ # AutoDock Vina configuration files
+├── scripts/ # Docking, parsing, statistics, modeling
+└── results/ # Logs, CSVs, statistical outputs
+
+
+---
+
+## Reproducibility
+- Fixed docking parameters
+- Control ligands for benchmarking
+- Analysis-ready outputs
+- Modular and extensible design
+
+---
+
+## Project Status
+Active development
+
+Planned extensions:
+- Automated multi-ligand docking
+- Expanded statistical testing
+- EEG and RL simulation modules
+
+---
+
+## NeuroData Relevance
+This project integrates:
+- Molecular modeling
+- Quantitative data analysis
+- Neural signal interpretation
+- Computational models of behavior
