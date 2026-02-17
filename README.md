@@ -64,16 +64,15 @@ Control ligands provide pharmacological baselines and prevent over-interpretatio
 | Oscillatory balance | Exploration–exploitation tradeoff |
 
 ---
+##project structure
 
-## Repository Structure
 Thymoquinone_CNS_Modeling/
 ├── README.md
-├── ligands/ # Thymoquinone + control ligands (PDBQT)
-├── receptors/ # CNS receptor structures
-├── configs/ # AutoDock Vina configuration files
-├── scripts/ # Docking, parsing, statistics, modeling
-└── results/ # Logs, CSVs, statistical outputs
-
+├── ligands/        # Thymoquinone + control ligands (PDBQT)
+├── receptors/      # CNS receptor structures
+├── configs/        # AutoDock Vina configuration files
+├── scripts/        # Docking, parsing, statistics, modeling
+└── results/        # Logs, CSVs, statistical outputs
 
 ---
 

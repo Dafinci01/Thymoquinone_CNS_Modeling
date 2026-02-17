@@ -1,0 +1,27 @@
+***NeuroData Mini-Proposal (Integrated)
+
+Title: Multi-Target Computational Profiling of Thymoquinone: Docking, EEG Simulation, and Reward-Learning Predictions
+
+Background:
+CNS disorders arise from multi-receptor dysfunction (dopaminergic, glutamatergic, monoaminergic). Thymoquinone shows reported neuroprotective effects; however, its multi-target CNS profile and systems-level neural implications remain unexplored.
+
+Objectives:
+Quantify thymoquinone binding across DRD2, MAO-B, and NMDA receptors vs clinically validated ligands.
+Derive ligand efficiency and selectivity profiles.
+Simulate EEG spectral changes from receptor modulation.
+Map binding to reinforcement-learning (RPE) parameters predicting behavior.
+
+Methods:
+Structure-based docking via AutoDock Vina.
+Python pipelines automate affinity, ligand efficiency, selectivity, and statistical comparisons (Kruskal–Wallis + Mann–Whitney U).
+Binding → EEG spectral simulation (beta, gamma, alpha bands).
+DRD2/NMDA binding → TD reinforcement learning model for reward prediction.
+Visual validation in PyMOL.
+
+Expected Outcomes:
+Identify polypharmacology and target bias.
+Generate testable EEG & behavioral hypotheses.
+Establish workflow connecting molecular pharmacology → neural dynamics → computational behavior modeling.
+
+NeuroData Relevance:
+Integrates computational pharmacology, EEG simulation, and RL-based cognitive modeling — fully aligned with neuroinformatics and brain-signal analysis goals.
