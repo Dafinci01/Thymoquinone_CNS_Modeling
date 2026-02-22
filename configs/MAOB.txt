@@ -1,0 +1,10 @@
+receptor = receptors/MAOB_new.pdbqt
+center_x = 50.53
+center_y = 160.22
+center_z = 31.13
+size_x = 22
+size_y = 22
+size_z = 22
+exhaustiveness = 10
+num_modes = 10
+energy_range = 4

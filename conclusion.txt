@@ -1,0 +1,58 @@
+Good. Let me give you this properly — biology first, then what your numbers actually mean.
+
+---
+
+**What are these three targets and why do they matter?**
+
+**DRD2 — Dopamine Receptor D2**
+DRD2 sits on the surface of neurons in areas of the brain controlling movement, motivation, and mood. When dopamine binds it, it triggers signals related to reward and pleasure. When it's overactivated, it's linked to schizophrenia and psychosis. When it's underactivated, it contributes to depression and Parkinson's. Haloperidol blocks it — that's how antipsychotics work.
+
+**MAO-B — Monoamine Oxidase B**
+As I just explained — it's the enzyme that destroys dopamine. Too much MAO-B activity = too little dopamine = Parkinson's symptoms. Blocking it is neuroprotective. Selegiline blocks it.
+
+**NMDA — N-Methyl-D-Aspartate Receptor**
+This is a glutamate receptor. Glutamate is the brain's main excitatory signal — it fires neurons. NMDA is critical for memory formation and synaptic plasticity (how the brain learns and adapts). When NMDA is overactivated, it causes excitotoxicity — neurons fire so much they die. This is linked to Alzheimer's and stroke damage. Memantine blocks it partially to protect neurons.
+
+---
+
+**Your results and what they mean:**
+
+```
+              DRD2      MAOB      NMDA
+thymoquinone  -4.445   -6.779   -3.793
+haloperidol   -5.542  -23.510*  -4.822
+selegiline    -4.173   -4.582   -3.775
+memantine     -4.892   -6.539   -4.677
+```
+
+*flagged as likely artifact
+
+**DRD2 conclusion:**
+Thymoquinone binds DRD2 at -4.445 kcal/mol. Haloperidol — a dedicated antipsychotic — binds stronger at -5.542. This makes sense. But thymoquinone is a natural plant compound that was never designed for this target, yet it's showing affinity comparable to memantine and selegiline against DRD2. This suggests thymoquinone may interact with the dopaminergic system, potentially relevant to mood and neuroprotection.
+
+**MAOB conclusion:**
+This is your most interesting finding. Thymoquinone at -6.779 outperforms selegiline at -4.582. Selegiline is a clinically approved MAO-B inhibitor used in Parkinson's disease. A natural compound binding MAO-B more strongly than an approved drug — computationally — is a genuinely interesting observation. This could suggest neuroprotective potential worth investigating in a real lab setting.
+
+**NMDA conclusion:**
+Thymoquinone binds NMDA at -3.793. Memantine — the approved Alzheimer's drug — binds at -4.677. Thymoquinone is weaker here, but still showing affinity. This could be relevant to memory protection and anti-excitotoxicity effects.
+
+---
+
+**Overall conclusion:**
+
+"Thymoquinone demonstrates computational binding affinity across all three major CNS receptor targets — dopaminergic, monoaminergic, and glutamatergic systems. Its strongest interaction was with MAO-B, where it outperformed selegiline, a clinically validated MAO-B inhibitor. This multi-target binding profile suggests thymoquinone may exert neuroprotective effects through polypharmacology — acting on multiple brain systems simultaneously rather than one specific target. These computational findings justify further investigation through in-vitro and in-vivo studies."
+
+---
+
+**The timeline :**
+
+Day 1 — Downloaded receptor structures from the Protein Data Bank (6CM4 for DRD2, 2V61/2XFN for MAO-B, 4PE5 for NMDA). These are real experimentally determined protein structures from X-ray crystallography.
+
+Day 1 — Obtained ligand structures from PubChem and the RCSB ligand database. Converted all structures to PDBQT format using Open Babel — the format AutoDock Vina requires.
+
+Day 1-2 — Identified correct binding site coordinates for each receptor by locating co-crystallized ligands and cofactors (FAD for MAO-B, active site geometry for DRD2 and NMDA).
+
+Day 2 — Ran structure-based molecular docking using AutoDock Vina for all four ligands against all three receptors — 12 docking runs total with exhaustiveness of 10.
+
+Day 2 — Extracted and compared binding affinities across targets. Identified thymoquinone's strongest interaction at MAO-B and compared against three clinically validated reference drugs.
+

@@ -1,0 +1,10 @@
+receptor = receptors/DRD2.pdbqt
+center_x = 17.61
+center_y = 1.56
+center_z = 14.56
+size_x = 22
+size_y = 22
+size_z = 22
+exhaustiveness = 10
+num_modes = 10
+energy_range = 4

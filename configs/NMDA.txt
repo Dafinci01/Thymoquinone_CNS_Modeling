@@ -1,0 +1,10 @@
+receptor = receptors/NMDA.pdbqt
+center_x = -27.67
+center_y = 32.54
+center_z = -20.26
+size_x = 22
+size_y = 22
+size_z = 22
+exhaustiveness = 10
+num_modes = 10
+energy_range = 4
