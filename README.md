@@ -1,6 +1,6 @@
 # Thymoquinone_CNS_Modeling
 
-Computational neuropharmacology pipeline integrating **multi-target CNS docking**, **control-ligand benchmarking**, and **neural / behavioral interpretation** aligned with NeuroData-style research training.
+Computational neuropharmacology pipeline integrating **multi-target CNS docking**, **control-ligand benchmarking**, and **neural / behavioral interpretation*.
 
 ---
 
