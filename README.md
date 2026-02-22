@@ -93,10 +93,3 @@ Planned extensions:
 - EEG and RL simulation modules
 
 ---
-
-## NeuroData Relevance
-This project integrates:
-- Molecular modeling
-- Quantitative data analysis
-- Neural signal interpretation
-- Computational models of behavior
